@@ -11,6 +11,11 @@
     
 </head>
 <body>
+    <a href="{% url 'register' %}">Registration</a>
+    <a href="{% url 'login' %}">Login</a>
+    <hr>
+    <h1>Welcome To Post Applications....!</h1>
+    <hr>
     {% for post in posts %}
     <h2><a href="{% url 'detail' slug=post.slug %}">Title: {{post.title}}</a></h1>
     <p>Content: {{post.content | truncatewords:10}}</p>
