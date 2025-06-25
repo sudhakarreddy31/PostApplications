@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Post List's</title>
+    {% load static %}    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    
+</head>
+<body>
+    {% for post in posts %}
+    <h2><a href="{% url 'detail' slug=post.slug %}">Title: {{post.title}}</a></h1>
+    <p>Content: {{post.content | truncatewords:10}}</p>
+    <small>Posted on:{{post.time}}</small>
+    {% endfor %}
+</body>
+</html>
