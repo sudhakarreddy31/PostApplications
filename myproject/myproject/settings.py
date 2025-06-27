@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'postapp',
     'users',
+    'dynamicforms',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'PostApplicationDB',
         'USER': 'postgres',
-        'PASSWORD': 'password',
+        'PASSWORD': 'Msr@1234',
         'HOST': 'localhost',  
         'PORT': '5432', 
     }
