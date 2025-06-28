@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('postapp.urls')),
     path('users/', include('users.urls')),
     path('dynamicforms/', include('dynamicforms.urls')),
+    path('functionbasedviews/', include('functionbasedviews.urls')),
 
 ]
