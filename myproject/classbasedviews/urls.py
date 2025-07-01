@@ -7,4 +7,5 @@ urlpatterns = [
     path('<int:pk>/', views.CBVDetailView.as_view(), name='cbv_detail'),
     path('<int:pk>/update/', views.CBVUpdateView.as_view(), name='cbv_update'),
     path('<int:pk>/delete/', views.CBVDeleteView.as_view(), name='cbv_delete'),
+    path('books/', views.BookListView.as_view(), name='book_list'),
 ]
