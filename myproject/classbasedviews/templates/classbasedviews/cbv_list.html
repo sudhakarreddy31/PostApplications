@@ -1,0 +1,32 @@
+
+<h1>CBV List</h1>
+<a href="{% url 'cbv_create' %}">Create New</a>
+<ul>
+ 
+  
+    <table border="1">
+        <thead>
+            <th>Title</th>
+            <th>description</th>
+            <th>created_at</th>
+            <th>is_active</th>
+        </thead>
+        <tbody>
+            {% for cbv in cbvs %}
+            <tr>
+                <td><a href="{% url 'cbv_detail' cbv.pk %}">{{ cbv.title }}</a></td>
+                <td>{{ cbv.description }}</td>
+                <td>{{ cbv.created_at }}</td>
+                <td>{{ cbv.is_active }}</td>
+                <td>
+                    <a href="{% url 'cbv_update' cbv.pk %}">Edit</a> |
+                    <a href="{% url 'cbv_delete' cbv.pk %}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+
+
+</ul>
+

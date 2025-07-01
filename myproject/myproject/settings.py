@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'users',
     'dynamicforms',
     'functionbasedviews',
+    'classbasedviews',
 ]
 
 MIDDLEWARE = [
