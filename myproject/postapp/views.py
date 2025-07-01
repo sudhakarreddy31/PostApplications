@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from postapp.models import Post
 
 # Create your views here.
@@ -15,5 +15,5 @@ def post_lists(request):
 
 
 def post_detail(request,slug):
-    post = Post.objects.get(slug=slug)
+    post = get_object_or_404(Post, slug=slug)
     return render(request,'postapp/post_detail.html', {'post':post})
