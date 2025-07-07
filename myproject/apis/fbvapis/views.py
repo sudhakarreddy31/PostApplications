@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from fbvapis.serializers import StudentSerializer
+from apis.fbvapis.serializers import StudentSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view  
 from rest_framework import status
-from fbvapis.models import Student
+from apis.fbvapis.models import Student
 
 
 # Create your views here.

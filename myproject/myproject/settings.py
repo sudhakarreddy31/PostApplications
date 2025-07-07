@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'dynamicforms',
     'functionbasedviews',
     'classbasedviews',
-    'fbvapis',
+    'apis.fbvapis',
+    'apis.cbvapis',
     'rest_framework',
     
 ]

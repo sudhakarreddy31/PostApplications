@@ -24,7 +24,8 @@ urlpatterns = [
     path('dynamicforms/', include('dynamicforms.urls')),
     path('functionbasedviews/', include('functionbasedviews.urls')),
     path('classbasedviews/', include('classbasedviews.urls')),
-    path('fbvapis/', include('fbvapis.urls')),
+    path('fbvapis/', include('apis.fbvapis.urls')),
+    path('cbvapis/', include('apis.cbvapis.urls')),
     
 
 ]

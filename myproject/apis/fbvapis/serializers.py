@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from fbvapis.models import Student
+from apis.fbvapis.models import Student
 
 
 class StudentSerializer(serializers.ModelSerializer):

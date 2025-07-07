@@ -1,6 +1,6 @@
 from django.urls import path
 
-from fbvapis import views
+from apis.fbvapis import views
 
 
 urlpatterns = [
