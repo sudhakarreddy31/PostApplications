@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'dynamicforms',
     'functionbasedviews',
     'classbasedviews',
+    'fbvapis',
+    'rest_framework',
+    
 ]
 
 MIDDLEWARE = [

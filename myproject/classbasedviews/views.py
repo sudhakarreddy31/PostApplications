@@ -77,7 +77,7 @@ class BookUpdateView(UpdateView):
 from django.core.exceptions import PermissionDenied
 def get_object(self, queryset = None):
     obj = super().get_object(queryset)
-    if obj.created_by! = self.request.user:
+    if obj.created_by!= self.request.user:
         raise PermissionDenied('You do not have permmisions')
         
     return obj
