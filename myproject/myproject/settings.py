@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'classbasedviews',
     'apis.fbvapis',
     'apis.cbvapis',
+    'apis.genricviews',
     'rest_framework',
     
 ]

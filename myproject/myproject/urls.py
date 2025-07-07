@@ -26,6 +26,7 @@ urlpatterns = [
     path('classbasedviews/', include('classbasedviews.urls')),
     path('fbvapis/', include('apis.fbvapis.urls')),
     path('cbvapis/', include('apis.cbvapis.urls')),
+    path('genericviews/', include('apis.genricviews.urls')),
     
 
 ]
